@@ -20,7 +20,7 @@ def calculadora():
         print(" Operação inválida!")
 
 def conversor_temperatura():
-    print("\n=== 🌡️ CONVERSOR DE TEMPERATURA ===")
+    print("\n=== CONVERSOR DE TEMPERATURA ===")
     c = float(input("Digite a temperatura em °C: "))
     f = (c * 9/5) + 32
     print(f"{c}°C equivalem a {f}°F")
