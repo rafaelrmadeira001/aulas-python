@@ -1,12 +1,16 @@
-def verificar_sinal():
-    num = float(input("Digite um número: ").replace(",", "."))
-    if num > 0:
-        print("O número é positivo.")
-    elif num < 0:
-        print("O número é negativo.")
-    else:
-        print("O número é zero.")
+def piramide_asteriscos():
+    while True:
+        entrada = input("Quantas linhas deseja na pirâmide? (ex: 5): ")
+        if entrada.isdigit():
+            linhas = int(entrada)
+            break
+        else:
+            print("Por favor, digite um número inteiro válido.")
+
+    print("\n=== Pirâmide de Asteriscos ===")
+    for i in range(1, linhas + 1):
+        print("*" * i)
 
 if __name__ == "__main__":
-    verificar_sinal()
-  
+    piramide_asteriscos()
+    
