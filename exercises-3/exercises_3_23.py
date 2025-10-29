@@ -11,20 +11,20 @@ def jogo_adivinhacao():
         palpite = input("Seu palpite: ")
 
         if not palpite.isdigit():
-            print("❌ Por favor, digite um número inteiro entre 1 e 10.")
+            print(" Por favor, digite um número inteiro entre 1 e 10.")
             continue
 
         palpite = int(palpite)
         tentativas += 1
 
         if palpite < 1 or palpite > 10:
-            print("⚠️ O número deve estar entre 1 e 10.")
+            print("O número deve estar entre 1 e 10.")
         elif palpite < numero_secreto:
-            print("🔼 Tente um número maior!")
+            print("Tente um número maior!")
         elif palpite > numero_secreto:
-            print("🔽 Tente um número menor!")
+            print("Tente um número menor!")
         else:
-            print(f"🎉 Parabéns! Você acertou o número {numero_secreto} em {tentativas} tentativas!")
+            print(f" Congratulation! Você acertou o número {numero_secreto} em {tentativas} tentativas!")
             break
 
 if __name__ == "__main__":
